@@ -19,7 +19,7 @@ topicParam = '/tema:'
 
 class LvPortals(DataFetcher):
     def __init__(self): 
-        super().__init__(baseUrl, listUrlPath, listItemsElem, listItemUrlElem, pageParam, periodParam, dateFormat, timeout)
+        super().__init__(baseUrl, listUrlPath, listItemsElem, listItemUrlElem, pageParam, periodParam, dateFormat, timeout, topicParam)
         
     def __get_datetime(self, date_string: str):
         if date_string == 'Šodien': return datetime.today().strftime('%Y-%m-%d')

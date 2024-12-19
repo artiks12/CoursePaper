@@ -1,6 +1,5 @@
 from DataFetchers.JuristaVards import JuristaVards, PATH as juristaVardsPath, topics as juristaVardsTopics
 from DataFetchers.LvPortals import LvPortals, PATH as lvPortalsPath
-from DataFetchers.Vestnesis import Vestnesis, PATH as vestnesisPath
 from DataFetchers.DataFetcher import DataFetcher
 
 from datetime import datetime, timedelta
@@ -61,4 +60,3 @@ def Execute(site, Fetcher: DataFetcher, savePath, filename = f'dati_{datetime.no
 
 # Execute('lvportals', LvPortals(), lvPortalsPath, 'dati.json')
 # Execute('juristavards', JuristaVards(), juristaVardsPath, 'dati.json', juristaVardsTopics)
-# Execute('vestnesis', Vestnesis(), juristaVardsPath, 'dati.json')

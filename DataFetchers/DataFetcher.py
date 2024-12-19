@@ -95,7 +95,7 @@ class DataFetcher:
         return self.__pageParam + str(page)
     
     def __constructTopicParam(self, topic):
-        return self.__topicParam + str(topic) if topic != None else ''
+        return self.__topicParam + str(topic) if topic != None and self.__topicParam != None else ''
 
     def fetchArticles(self, dateFrom: datetime, dateTo: datetime, topic):
         result = []
